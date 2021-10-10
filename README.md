@@ -1,44 +1,43 @@
 # Unit-One-Topic-4
-This repository includes my learning on topics Exception Handling in Java. Some Basic codes performed on Eclipse are attached in the code section.
+This repository includes my learning on topics Collections, Comparable and Comparator Interfaces, hashcode and equals in Java. Some Basic codes performed on Eclipse are attached in the code section.
 
-### What is Exception?
-An exception is an event, which occurs during the execution of program (Run time), that disrupts the normal flow of the program's instructions.
-### Why Exception Occurs?
-- A user has entered invalid data
-- Network connectivity issues
-- JVM ran out of memory
-- user based exceptions
-### Types of Exceptions
-**1. Checked Exception**
-Exceptional conditions that a well-written application should anticipate and recover from.
-For example - A user provide that name of a non existent file. exception occurs.
+### What is Collections?
+A collection is a single object managing a group of objects known as its elements. Types of collection
+-Set (HashSet, SortedSet, TreeSet)
+A set is an unordered collection; no duplicates are permitted in it.
+-List (ArrayList, LinkedList)
+A list is an ordered collection; duplicates are permitted.
+-Deque (ArrayDeque, LinkedList)
+-Map (HashMap, TreeMap, LinkedHashMap)
+A map object describes mappings from keys to values. Duplicate keys to value is not permitted but values can be duplicated.
 
-**2. Unchecked Exception**
-- Error
-Exceptional conditions that are external to the application, and the application usually cannot anticipate or recover from.
-For example- System/application is able to open the file but not ale to read it due to malfunctioning so it will throw an error.
+### What are Iterators?
+Iteration is the process of retrieving every element in a collection. Various methods are hasNext(), next(), remove().
 
-- Runtime Exception
-These are exceptional conditions that are internal to the application, and the application usually cannot anticipate or recover from. 
-For Example - If the file is read and logical error causes a null to be assed it will cause a exception.
+### What is Comparable?
+Comparable provides a single sorting sequence. In other words, we can sort the collection on the basis of a single element such as id, name, and price. Comparable provides compareTo() method to sort elements. Comparable is present in **java.lang package**. We can sort the list elements of Comparable type by **Collections.sort(List)** method.
 
-### How are Exceptions Handled?
-- Throwing an exception
-When an error occurs within a method, the method creates an object and hands it off to the runtime system - exception object
-- Call Stack
-The list of methods that had been called to get to method where the error occurred is known as the call stack. After a method throws an exception, the runtime system attempts to find something in the call stack to handle it.
-- Catching the exception
-The runtime system passes the exception object to appropriate "exception handler- a method that contains a block of code that can handle the exception. The exception handler chosen is said to catch the exception.
+### What is Comparator?
+The Comparator provides multiple sorting sequences. In other words, we can sort the collection on the basis of multiple elements such as id, name, and price etc. Comparator provides compare() method to sort elements. A Comparator is present in the **java.util package**. We can sort the list elements of Comparator type by **Collections.sort(List, Comparator)** method.
 
-### Blocks used in Exception handling
-**Try-catch-finally(optional)**
-A method that specifies that it can throw the exception. The method must provide a throws clause.
+### Equals() and Hashcode() in Java
+The equals() and hashcode() are the two important methods provided by the Object class for comparing objects.
+### What is hashcode?
+A hashcode is an integer value associated with every object in Java, facilitating the hashing in hash tables.
+**Syntax:**
+public int hashCode()  
+**Returns:**
+It returns the hash code value for the given objects.
 
-### Try Block
-Contains set of statements that can throw exceptions
+### What is equals?
+The java equals() is a method of lang.Object class, and it is used to compare two objects. To compare two objects that whether they are the same, it compares the values of both the object's attributes. By default, two objects will be the same only if stored in the same memory location.
+**Syntax:** public boolean equals(Object obj) 
+**Parameter:**
+obj: It takes the reference object as the parameter, with which we need to make the comparison.
+**Returns:**
+It returns the true if both the objects are the same, else returns false.
 
-### Catch Block
-Exception handler if the statements in the try block throws an exception
-
-### Finally Block
-Optional block. It always executes when the try blocks exits. Finally block is executed even if an unexpected exception occurs.
+**Reference: -**
+https://www.javatpoint.com/difference-between-comparable-and-comparator
+https://drive.google.com/drive/folders/1jS6YPPNjd01MHA_Daam4f8UIj9SvL5pG
+https://www.javatpoint.com/equals-and-hashcode-in-java#:~:text=A%20hashcode%20is%20an%20integer,the%20hashing%20in%20hash%20tables.&text=The%20hashcode()%20method%20returns,usually%20returns%20different%20hash%20values.
