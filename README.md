@@ -41,3 +41,5 @@ It returns the true if both the objects are the same, else returns false.
 https://www.javatpoint.com/difference-between-comparable-and-comparator
 https://drive.google.com/drive/folders/1jS6YPPNjd01MHA_Daam4f8UIj9SvL5pG
 https://www.javatpoint.com/equals-and-hashcode-in-java#:~:text=A%20hashcode%20is%20an%20integer,the%20hashing%20in%20hash%20tables.&text=The%20hashcode()%20method%20returns,usually%20returns%20different%20hash%20values.
+https://www.javatpoint.com/collections-in-java
+
